@@ -42,7 +42,7 @@ To run any of these projects locally on your machine, follow the steps below:
 2. Navigate to the project directory:
 
    ```
-   cd js30-projects
+   cd JS-30
    ```
 
 3. For each project, open the corresponding folder and open the `index.html` file in your preferred web browser.
