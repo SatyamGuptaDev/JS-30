@@ -1,3 +1,4 @@
+/* Flex Panels Image Gallery */
 
 *{
     margin: 0;
@@ -5,53 +6,115 @@
     box-sizing: border-box;
 }
 body{
-    background: #ffc600;
+    background: #ffffff;
     font-family: 'helvetica neue';
     font-size: 20px;
     font-weight: 200;
-    max-width: 100vw;
-    max-height: 99.9vh;
-    overflow: hidden;
 }
 
-
-.conatainer{
+.container{
+    min-height: 100vh;
     display: flex;
-    flex-direction: row;
-    justify-content: start;
-    align-items: start;
+    justify-content: center;
+    align-items: center;
     flex-wrap: nowrap;
-    height: 100%;
-    width: 100vw;
+    gap: 0;
 }
 .child{
-    padding: 20px;
     display: inline-block;
-}
-.child:nth-child(1){
-    background: url(https://source.unsplash.com/gYl-UtwNg_I/1500x1500) center center;
+    flex: 1 1 20vw;
     height: 100vh;
     width: 20vw;
+    outline: 5px solid rgba(255, 255, 255, 0.144);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    color: white;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.826);
+    font-family: 'Kaushan Script', cursive;
+    font-size: 50px;
+}
+/* .child:nth-child(1){
+    background: url(https://source.unsplash.com/gYl-UtwNg_I/1500x1500) center center;
 }
 .child:nth-child(2){
     background: url(https://source.unsplash.com/rFKUFzjPYiQ/1500x1500) center center;
-    height: 100vh;
-    width: 20vw;
-
 }
 .child:nth-child(3){
     background: url(https://source.unsplash.com/NDuPLKYRXQU/1500x1500) center center ;
-    height: 100vh;
-    width: 20vw;
 }
 .child:nth-child(4){
     background:url(https://source.unsplash.com/epcsn8Ed8kY/1500x1500) center center;
-    height: 100vh;
-    width: 20vw;
 }
 .child:nth-child(5){
     background: url(https://source.unsplash.com/NQSWvyVRIJk/1500x1500) center center;
-    height: 100vh;
-    width: 20vw;
+} */
+
+.child .hide{
+    font-size: 20px;
+    opacity: 0;
 }
 
+
+
+@keyframes grow {
+    0%{
+        flex-basis: 20vw;
+    }
+    50%{
+        flex-basis: 15vw;
+        background-position: center cover ;
+    }
+    100%{
+        flex-basis: 40vw; /* Increase the width of the first child */
+        background-position: center cover;
+        background: scale(1.5);
+    }
+}
+@keyframes shrink {
+    0%{
+        flex-basis: 40vw;
+        background-position: center cover;
+        background: scale(1.5);
+    }
+    50%{
+        flex-basis: 45vw;
+        background-position: center cover ;
+    }
+    100%{
+        flex-basis: 20vw;
+    }
+}
+@keyframes show {
+    0%{
+        opacity: 0;
+        font-size: 20px;
+
+    }
+    50%{
+        opacity: 0;
+        font-size: 30px;
+
+    }
+    100%{
+        opacity: 1;
+        font-size: 40px;
+    }
+    
+}
+@keyframes hide {
+    0%{
+        opacity: 1;
+        font-size: 40px;
+    }
+    50%{
+        opacity: 1;
+        font-size: 30px;
+    }
+    100%{
+        opacity: 0;
+        font-size: 20px;
+    }
+    
+}
