@@ -1,6 +1,6 @@
 # JavaScript 30 Projects Repository
 
-![JavaScript 30 Projects](https://your-image-url.com)
+**JavaScript 30 Projects**
 
 This repository contains 30 JavaScript projects that I created for my practice from Wes Bos' #JavaScript30 series. Each project is a standalone application designed to showcase various JavaScript concepts and techniques. These projects have been developed entirely by me to improve my skills and understanding of JavaScript.
 
