@@ -1,0 +1,14 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+/* body{
+    width: 100wh;
+    height: 100vh;
+} */
+#draw{
+    width: 800;
+    height: 800;
+}
